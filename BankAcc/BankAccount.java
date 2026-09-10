@@ -12,13 +12,14 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount) {
-        // TODO:
-        // Withdraw the requested amount if sufficient funds are available.
-        // Return true if the withdrawal succeeds.
-        // Return false otherwise. return false;
+        if (balance - amount >= 50) {
+            balance = balance - amount
+            System.out.println("Withdrawl success");
+            return true;
+        }
         return false;
     }
-    
+
     public String getAccountSummary() {
         return accountHolder + ": $" + balance;
     }
