@@ -12,9 +12,8 @@ public class BankAccount {
     }
 
     public boolean withdraw(double amount) {
-        if (balance - amount >= 50) {
-            balance = balance - amount
-            System.out.println("Withdrawl success");
+        if (balance - (amount + 2) >= 50) {
+            balance = balance -(amount + 2);
             return true;
         }
         return false;
